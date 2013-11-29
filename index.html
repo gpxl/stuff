@@ -1,0 +1,23 @@
+---
+layout: default
+title: "Stuff in the House: Help me declutter by buying something, please!"
+---
+<div class="row">
+  {% for post in site.posts %}
+  <div class="col-md-4 posts {{ post.available }}">
+    <a href="{{ post.gurl }}" class="panel">
+      <div class="panel panel-info">
+        <div class="panel-body">
+          <img src="/images/{{ post.image }}" />
+        </div>
+        <div class="panel-footer">
+          {{ post.title | truncate: 40 }}
+          <br />
+          <strong>{{ post.price }}{% if post.obo %} obo{% endif %}</strong>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
