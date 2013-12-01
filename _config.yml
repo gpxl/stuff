@@ -1,3 +1,6 @@
 name: Stuff in the House
 markdown: redcarpet
 pygments: true
+
+baseurl: '/stuff'
+permalink: /:title
